@@ -7,8 +7,6 @@ import base64
 from io import BytesIO
 
 
-
-
 # Set the correct env variable
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.JSON'
 
@@ -57,4 +55,7 @@ def get_labels():
         }
     ), 201
 
+if __name__ == '__main__':
+
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
