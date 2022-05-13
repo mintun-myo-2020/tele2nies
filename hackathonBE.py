@@ -14,7 +14,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.JSON'
 client = vision.ImageAnnotatorClient()
 
 #Function to detect the objects in an image
-def detect_objects(image_source):
+def detect_objects(image):
     pass
 
 # flask stuffs
@@ -26,20 +26,30 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 @app.route("/get_labels", methods=['GET'])
 def get_labels():
 
-    data = request.json
-    imgdata = base64.b64decode(data) #might need to edit to parse the correct stuff
-
+    data = request.get_json()
+    base64_img = data['img']
+    imgdata = base64.b64decode(base64_img) #decode the encoded img back into image
     image = vision.Image(content=imgdata)
-    response = client.label_detection(image=image)
-    labels = response.label_annotations
-    return_labels = []
-    # print('Labels:')
-    # for label in labels:
-    #     print(label.description)
+    objects = client.object_localization(image=image).localized_object_annotations
+    return_objects = {}
 
     try:
-        for label in labels:
-            return_labels.append(label)
+        for object in objects:
+            name = object.name
+            bounding_poly = object.bounding_poly.normalized_vertices
+            bottom_left = bounding_poly[0]
+            bottom_right = bounding_poly[1]
+            top_right = bounding_poly[2]
+            top_left = bounding_poly[3]
+
+            return_objects[name] = {
+                "name": name, 
+                "bottom_left": (bottom_left.x, bottom_left.y),
+                "botton_right": (bottom_right.x, bottom_right.y),
+                "top_right": (top_right.x, top_right.y),
+                "top_left": (top_left.x, top_left.y)
+                }
+
     except Exception as e:
         return jsonify(
             {
@@ -51,7 +61,7 @@ def get_labels():
     return jsonify(
         {
             "code": 200,
-            "data": return_labels
+            "data": return_objects
         }
     ), 201
 
