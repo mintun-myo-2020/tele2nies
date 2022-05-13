@@ -5,7 +5,7 @@
 * integration stuff
 * backend to do: check if "dangerous item" close to edge, (other possible dangerous scenarios)
 
-## hackathonBE API endpoints
+## hackfestBE API endpoints
 * **URL: ** /get_labels/
 * **Method: ** `GET`
 * **Required Params: ** `image encoded in base64 format`
