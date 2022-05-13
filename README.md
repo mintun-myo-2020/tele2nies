@@ -3,7 +3,7 @@
 # todo: 
 * frontend stuff
 * integration stuff
-* host BE on localhost
+* backend to do: check if "dangerous item" close to edge, (other possible dangerous scenarios)
 
 ## hackathonBE API endpoints
 * **URL: ** /get_labels/
