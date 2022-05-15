@@ -1,28 +1,4 @@
-body {
-  background-color: #f9f9fa
-}
 
-.flex {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto
-}
-
-/* @media (max-width:991.98px) {
-  .padding {
-      padding: 1.5rem
-  }
-} */
-/* 
-@media (max-width:767.98px) {
-  .padding {
-      padding: 1rem
-  }
-} */
-@media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) { }
 
 .padding {
   padding: 5rem
@@ -32,7 +8,8 @@ body {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  -ms-box-shadow: none
+  -ms-box-shadow: none;
+  
 }
 
 .pl-3,
@@ -107,3 +84,111 @@ p {
  padding: .375rem .5625rem;
  font-weight: normal;
 }
+
+
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+
+
+  #home_svg {
+    width: 50%;
+    height: 100px;
+    margin: 0px 20px;
+  }
+  
+  #phone_svg {
+    width: 50%;
+  }
+  
+  
+  }
+  
+
+/* color codes
+#EFD6D2
+*/
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow-x: hidden ;
+  background-color: #fdfcfa !important;
+}
+
+/* navbar */
+h3 {
+font-weight: 600 !important;
+}
+.nav-item a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF !important;
+}
+
+.nav-item a:hover {
+  color: #0E3A53 !important;
+}
+
+
+a.nav-link.active::after, a.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background:  #0E3A53;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+a.nav-link.active:hover::after, a.nav-link:hover::after {
+  width: 100%;
+
+}
+
+/* main box */
+
+#main-box {
+  background: #497D9B;
+
+}
+
+#main-box p {
+font-size: 12px !important;
+}
+
+h3 {
+  font-weight: 600 !important;
+}
+
+
+.btn-outline-secondary {
+color: #fff !important;
+border-color: #fff !important;
+}
+
+
+.btn-outline-secondary:hover {
+color: #fff !important;
+border-color: #21465c !important;
+background-color: #21465c !important ;
+}
+
+
+
+body {
+margin: 0;
+}
+
+.wave-container {
+position: relative;
+background: #f8edea;
+color: #FFF;
+text-align: center;
+overflow: hidden;
+}
+
+
