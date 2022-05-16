@@ -18,16 +18,21 @@ BuildBetter is a mobile application that allow users to identify potential hazar
 <img src = 'ui/fe/img/screen2.png'  width = '150px'>
 <img src = 'ui/fe/img/screen3.png' width = '150px'>
 <img src = 'ui/fe/img/screen4.png' width = '150px'>
-<img src = 'ui/fe/img/screen5.png'  width = '150px'>
+<img src = 'ui/fe/img/screen5.png' width = '150px'>
+<img src = 'ui/fe/img/screen6.png'  width = '150px'>
 
 
 # Technologies used:
-* Google Cloud Vision AI
-* Google Cloud IOT
 * Firebase
-* Google Cloud
+  * Track analytics to find recurring incidents
 * Google Meet
+  * Set up calls with contractors for improvement consultations
 
+# Future Plans
+We hope to implement the following in the future:
+* Google Cloud Machine Learning
+* Recommender
+* Google Cloud IoT
 
 # todo: 
 * frontend stuff
