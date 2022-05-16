@@ -1,5 +1,4 @@
 
-
 .padding {
   padding: 5rem
 }
@@ -85,25 +84,6 @@ p {
  font-weight: normal;
 }
 
-
-
-@media screen and (min-width: 0px) and (max-width: 500px){
-
-
-  #home_svg {
-    width: 50%;
-    height: 100px;
-    margin: 0px 20px;
-  }
-  
-  #phone_svg {
-    width: 50%;
-  }
-  
-  
-  }
-  
-
 /* color codes
 #EFD6D2
 */
@@ -112,11 +92,6 @@ p {
   margin: 0;
   padding: 0;
 
-}
-
-body {
-  overflow-x: hidden ;
-  background-color: #fdfcfa !important;
 }
 
 /* navbar */
@@ -175,12 +150,6 @@ border-color: #fff !important;
 color: #fff !important;
 border-color: #21465c !important;
 background-color: #21465c !important ;
-}
-
-
-
-body {
-margin: 0;
 }
 
 .wave-container {
