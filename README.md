@@ -35,10 +35,6 @@ We hope to implement the following in the future:
 * Recommender
 * Google Cloud IoT
 
-# todo: 
-* frontend stuff
-* integration stuff
-* backend to do: check if "dangerous item" close to edge, (other possible dangerous scenarios)
 
 ## hackfestBE API endpoints
 * **URL: ** /get_labels/
