@@ -13,6 +13,13 @@ Poor housing in developing countries can lead to severe consequences, and this i
 
 # What it does:
 BuildBetter is a mobile application that allow users to identify potential hazards and  risks by simply scanning their house using their movile device. Once the scan is completed, users will be notified of the risk level and can contact the relevant contracters for assistance. They are also able get an overview of their on-going jobs with contracters.
+<br>
+<img src = 'ui/fe/img/screen1.png'>
+<img src = 'ui/fe/img/screen2.png'>
+<img src = 'ui/fe/img/screen3.png'>
+<img src = 'ui/fe/img/screen4.png'>
+<img src = 'ui/fe/img/screen5.png'>
+
 
 # Technologies used:
 * Google Cloud Vision AI
