@@ -1,4 +1,7 @@
-# tele2nies
+# BuildBetter
+<p align="center">
+  <img src='img/BuildBetter.png'>
+</p>
 
 # todo: 
 * frontend stuff
