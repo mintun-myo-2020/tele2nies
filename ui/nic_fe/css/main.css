@@ -51,9 +51,7 @@ a.nav-link.active:hover::after, a.nav-link:hover::after {
 
 }
 
-#main-box p {
-  font-size: 12px !important;
-}
+
 
 h3 {
     font-weight: 600 !important;
