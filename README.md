@@ -1,6 +1,6 @@
-# BuildBetter
+# BuildBetter by tele2nies
 <p align="center">
-  <img src='img/BuildBetter.png'>
+  <img src='ui/fe/img/BuildBetter.png'>
 </p>
 
 # todo: 
