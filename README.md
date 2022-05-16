@@ -12,7 +12,7 @@ Poor housing in developing countries can lead to severe consequences, and this i
 <img src = 'https://sustainabledevelopment.un.org/content/sdgsummit/images/E_SDG%20goals_icons-individual-rgb-11.png' width = '120px' height = '120px'>
 
 # What it does:
-BuildBetter is a mobile application that allow users to identify potential hazards and  risks by simply scanning their house using their movile device. Once the scan is completed, users will be notified of the risk level and can contact the relevant contracters for assistance. They are also able get an overview of their on-going jobs with contracters.
+BuildBetter is a mobile application that uses Visual Object Recognition to “diagnose and fix” possible causes of injury at/around home. Users can identify potential hazards and  risks by simply scanning their house using their mobile device. Once the scan is completed, users will be notified of the risk level and can contact the relevant contracters for assistance. They are also able get an overview of their on-going jobs with contracters.
 <br>
 <img src = 'ui/fe/img/screen1.png'  width = '150px'>
 <img src = 'ui/fe/img/screen2.png'  width = '150px'>
