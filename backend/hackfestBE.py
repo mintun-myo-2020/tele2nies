@@ -13,9 +13,33 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'ServiceAccountToken.JSON'
 # Instantiate a client
 client = vision.ImageAnnotatorClient()
 
-#Function to detect the objects in an image
-def detect_objects(image):
-    pass
+#Function to detect if objects overlap in the image
+ 
+# Returns true if two rectangles(l1, r1)
+# and (l2, r2) overlap
+def check_overlap(rect1, rect2):
+    print(rect1, rect2)
+    # To check if either rectangle is actually a line
+      # For example  :  l1 ={-1,0}  r1={1,1}  l2={0,-1}  r2={0,1}
+       
+    if (rect1["top_left"][0] == rect1["bottom_right"][0] or rect1["top_left"][1] == rect1["bottom_right"][1] or rect2["top_left"][0] == rect2["bottom_right"][0] or rect2["top_left"][1] == rect2["bottom_right"][1]):
+        # the line cannot have positive overlap
+        return False
+       
+     
+    # If one rectangle is on left side of other
+    
+    if(rect1["top_left"][0] >= rect2["bottom_right"][0] or rect2["top_left"][0] >= rect1["bottom_right"][0]):
+        return False
+ 
+    # If one rectangle is above other
+    if(rect1["bottom_right"][1] >= rect2["top_left"][1] or rect2["bottom_right"][1] >= rect1["top_left"][1]):
+        return False
+ 
+    return True 
+# This code is contributed by Vivek Kumar Singh
+
+
 
 # flask stuffs
 app = Flask(__name__)
@@ -32,6 +56,7 @@ def get_labels():
     image = vision.Image(content=imgdata)
     objects = client.object_localization(image=image).localized_object_annotations
     return_objects = {}
+    too_close = []
 
     try:
         for object in objects:
@@ -45,10 +70,15 @@ def get_labels():
             return_objects[name] = {
                 "name": name, 
                 "bottom_left": (bottom_left.x, bottom_left.y),
-                "botton_right": (bottom_right.x, bottom_right.y),
+                "bottom_right": (bottom_right.x, bottom_right.y),
                 "top_right": (top_right.x, top_right.y),
                 "top_left": (top_left.x, top_left.y)
                 }
+        # for i in range(len(return_objects)):
+        #     print(return_objects[i])
+        #     if check_overlap(return_objects[i], return_objects[i + 1]): 
+        #         too_close.append([return_objects[i], return_objects[i + 1]])
+
 
     except Exception as e:
         return jsonify(
