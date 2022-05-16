@@ -17,8 +17,8 @@ BuildBetter is a mobile application that allow users to identify potential hazar
 <img src = 'ui/fe/img/screen1.png'  width = '150px'>
 <img src = 'ui/fe/img/screen2.png'  width = '150px'>
 <img src = 'ui/fe/img/screen3.png' width = '150px'>
+<img src = 'ui/fe/img/cam.png' width = '150px'>
 <img src = 'ui/fe/img/screen4.png' width = '150px'>
-<img src = 'ui/fe/img/screen5.png' width = '150px'>
 <img src = 'ui/fe/img/screen6.png'  width = '150px'>
 
 
