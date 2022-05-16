@@ -1,4 +1,33 @@
-# tele2nies
+# BuildBetter by tele2nies
+<p align="center">
+  <img src='ui/fe/img/BuildBetter.png' width = '200px' height = '200px'>
+</p>
+
+# Project Overview:
+Poor housing in developing countries can lead to severe consequences, and this is due to the lack of information regarding safe housekeeping. BuildBetter aims to help families in developing countries identify potential house hazards to create a safe, resilient and sustainable environment for them. By keeping them informed of dangerous hazards and allowing them to contact contracters to help them, our users will be equipped with the necessary knowledge on safe housekeeping, improving their health and well-being in the long run. We hope to address the following Sustainable Development Goals with our application.
+<br>
+<img src = 'https://sustainabledevelopment.un.org/content/sdgsummit/images/E_SDG%20goals_icons-individual-rgb-03.png' width = '120px' height = '120px'>
+<img src = 'https://sustainabledevelopment.un.org/content/sdgsummit/images/E_SDG%20goals_icons-individual-rgb-07.png' width = '120px' height = '120px' >
+<img src = 'https://sustainabledevelopment.un.org/content/sdgsummit/images/E_SDG%20goals_icons-individual-rgb-11.png' width = '120px' height = '120px'>
+
+
+# What it does:
+BuildBetter is a mobile application that allow users to identify potential hazards and  risks by simply scanning their house using their movile device. Once the scan is completed, users will be notified of the risk level and can contact the relevant contracters for assistance. They are also able get an overview of their on-going jobs with contracters.
+<br>
+<img src = 'ui/fe/img/screen1.png' height = '100px' width = '60px'>
+<img src = 'ui/fe/img/screen2.png' height = '100px' width = '60px'>
+<img src = 'ui/fe/img/screen3.png' height = '100px' width = '60px'>
+<img src = 'ui/fe/img/screen4.png' height = '100px' width = '60px'>
+<img src = 'ui/fe/img/screen5.png' height = '100px' width = '60px'>
+
+
+# Technologies used:
+* Google Cloud Vision AI
+* Google Cloud IOT
+* Firebase
+* Google Cloud
+* Google Meet
+
 
 # todo: 
 * frontend stuff

@@ -1,0 +1,113 @@
+
+/* color codes
+#EFD6D2
+*/
+  * {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden ;
+    background-color: #fdfcfa !important;
+}
+
+/* navbar */
+h3 {
+  font-weight: 600 !important;
+}
+.nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF !important;
+}
+
+.nav-item a:hover {
+    color: #0E3A53 !important;
+}
+
+
+a.nav-link.active::after, a.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:  #0E3A53;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+a.nav-link.active:hover::after, a.nav-link:hover::after {
+    width: 100%;
+
+}
+
+/* main box */
+
+#main-box {
+    background: #497D9B;
+
+}
+
+
+
+h3 {
+    font-weight: 600 !important;
+}
+
+
+.btn-outline-secondary {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  border-color: #21465c !important;
+  background-color: #21465c !important ;
+}
+
+
+
+body {
+  margin: 0;
+}
+
+.wave-container {
+  position: relative;
+  background: #f8edea;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+#vid {
+  width: 75%;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+ 
+
+  #home_svg {
+    width: 50%;
+    height: 100px;
+    margin: 0px 20px;
+  }
+
+  #phone_svg {
+    width: 50%;
+  }
+
+  .sdg_img {
+    width: 100px;
+    height: 100px;
+  }
+
+
+}
